@@ -1,0 +1,99 @@
+    header {
+        width: 100%;
+        padding: 28px 8%;
+    }
+
+    #navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav_logo {
+        font-size: 24px;
+        color: black;
+    }
+
+    #nav_list {
+        display: flex;
+       list-style: none;
+       gap: 48px;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color:#0e0e01;
+        font-weight: 600;
+    }
+
+        .nav-item.active a {
+            color: #0e0e01;
+            border-bottom: 3px solid #0e0e01 ;
+        }
+        #mobile_btn {
+            display: none;
+        }
+        
+        #mobile_menu {
+            display: none;
+        }
+        
+        @media screen and (max-width: 1170px) {
+            #nav_list,
+            #navbar .btn-default {
+                display: none;
+            }
+        
+            #mobile_btn {
+                display: block;
+                border: none;
+                background-color: transparent;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+        
+            #mobile_menu.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            #mobile_nav_list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin: 12px 0px;
+            }
+        
+            #mobile_nav_list .nav-item {
+                list-style: none;
+                text-align: center;
+            } 
+        }
+
+        body {
+            background-color: #0b0b64; /* Azul claro para o fundo */
+        }
+        header {
+            background-color: #0277bd; /* Azul mais escuro para o cabeçalho */
+        }
+        .nav-item a, .btn-default, #cta .title span, .dish-title, .section-title, .section-subtitle, .feedback p, #footer_items {
+            color: #fbc02d; /* Amarelo escuro para os textos */
+        }
+        .btn-default {
+            background-color: #ffeb3b; /* Amarelo para os botões */
+            border: none;
+            color: #0277bd; /* Azul para o texto dos botões */
+            padding: 10px 20px;
+         
+        }
+        .btn-default:hover {
+            background-color: #fbc02d; /* Amarelo escuro para o hover dos botões */
+        }
+        #nav_logo, #mobile_menu button {
+            color: #fbc02d; /* Amarelo escuro para o logo e botão no menu mobile */
+        }
+        .dish img, .feedback-avatar, #testimonial_chef {
+            width: 250px; /* Largura das imagens */
+            height: auto; /* Altura automática para manter a proporção */}

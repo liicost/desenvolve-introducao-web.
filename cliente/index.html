@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo chamado styles.css -->
+    <link rel="stylesheet" href="header.css"> <!-- Link para o arquivo CSS externo chamado header.css -->
+    <title>GP Náutica</title> <!-- Título da página -->
+    <style>
+        /* Estilos CSS dentro do documento HTML */
+        body {
+            background-color: #e0f7fa; /* Cor de fundo azul claro */
+        }
+        header {
+            background-color: #0277bd; /* Cor de fundo azul escuro para o cabeçalho */
+        }
+        .nav-item a, .btn-default, #cta .title span, .dish-title, .section-title, .section-subtitle, .feedback p, #footer_items {
+            color: #fbc02d; /* Cor amarela escura para vários textos */
+        }
+        .btn-default {
+            background-color: #ffeb3b; /* Cor de fundo amarela para os botões */
+            border: none; /* Remove a borda do botão */
+            color: #0277bd; /* Cor do texto do botão em azul */
+            padding: 10px 20px; /* Padding interno do botão */
+            text-align: center; /* Alinha o texto do botão ao centro */
+            text-decoration: none; /* Remove a sublinha do texto do botão */
+            display: inline-block; /* Exibe o botão como bloco inline */
+            font-size: 16px; /* Tamanho da fonte do texto do botão */
+            margin: 4px 2px; /* Margem ao redor do botão */
+            cursor: pointer; /* Define o cursor como pointer quando o botão é hover */
+            border-radius: 4px; /* Bordas arredondadas para o botão */
+        }
+        .btn-default:hover {
+            background-color: #fbc02d; /* Cor de fundo amarela escura para o hover dos botões */
+        }
+        #nav_logo, #mobile_menu button {
+            color: #fbc02d; /* Cor amarela escura para o logo e botão no menu mobile */
+        }
+        .dish img, .feedback-avatar, #testimonial_chef {
+            width: 250px; /* Define a largura das imagens */
+            height: auto; /* Altura automática para manter a proporção das imagens */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar"> <!-- Barra de navegação -->
+            <i class="fa-solid fa-sailboat" id="nav_logo">gp nautica</i> <!-- Logo da empresa -->
+            <ul id="nav_list"> <!-- Lista de navegação principal -->
+                <li class="nav-item active"> 
+                    <a href="#home">Quem somos</a> <!-- Link para a seção "Quem somos" -->
+                </li>
+                <li class="nav-item"> 
+                    <a href="#menu">Nossos modelos</a> <!-- Link para a seção "Nossos modelos" -->
+                </li>
+                <li class="nav-item"> 
+                    <a href="#testimonials">Avaliações</a> <!-- Link para a seção "Avaliações" -->
+                </li>
+            </ul>
+            <button class="btn-default">Faça seu orçamento</button> <!-- Botão para orçamento -->
+            <div id="mobile_menu"> <!-- Menu mobile -->
+                <ul id="mobile_nav_list"> <!-- Lista de navegação do menu mobile -->
+                    <li class="nav-item">
+                        <a href="#home">Início</a> <!-- Link para a seção "Início" no menu mobile -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Nossos modelos</a> <!-- Link para a seção "Nossos modelos" no menu mobile -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials">Avaliações</a> <!-- Link para a seção "Avaliações" no menu mobile -->
+                    </li>
+                </ul>
+                <button class="btn-default">Faça já seu orçamento</button> <!-- Botão para orçamento no menu mobile -->
+            </div>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home"> <!-- Seção "Quem somos" -->
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title"><span>QUALIDADE E SEGURANÇA</span></h1> <!-- Título com destaque -->
+                <p class="description">vdgsf</p> <!-- Descrição curta -->
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">FAÇA JÁ UM ORÇAMENTO</a> <!-- Botão para orçamento -->
+                    <a href="tel:+55555555555" id="phone_button"> <!-- Botão para ligação telefônica -->
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (37)-999129817 <!-- Número de telefone -->
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="" alt=""> <!-- Imagem de banner -->
+            </div>
+        </section>
+
+        <section id="menu"> <!-- Seção "Nossos modelos" -->
+            <h3 class="section-subtitle">Nossos modelos mais vendidos</h3> <!-- Subtítulo da seção -->
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i> <!-- Ícone de coração -->
+                    </div>
+                    <img src="1.jpeg" class="dish-image" alt=""> <!-- Imagem do produto -->
+                    <h3 class="dish-title">MODELO 1</h3> <!-- Título do produto -->
+                    <span class="dish-description">DESCRIÇÃO DO PRODUTO</span> <!-- Descrição do produto -->
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i> <!-- Ícones de estrela para avaliação -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4></h4> <!-- Preço do produto -->
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i> <!-- Ícone de carrinho de compras -->
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i> <!-- Ícone de coração -->
+                    </div>
+                    <img src="2.jpeg" class="dish-image" alt=""> <!-- Imagem do produto -->
+                    <h3 class="dish-title">MODELO 2</h3> <!-- Título do produto -->
+                    <span class="dish-description">DESCRIÇÃO DO PRODUTO</span> <!-- Descrição do produto -->
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i> <!-- Ícones de estrela para avaliação -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4></h4> <!-- Preço do produto -->
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i> <!-- Ícone de carrinho de compras -->
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i> <!-- Ícone de coração -->
+                    </div>
+                    <img src="3.jpeg" class="dish-image" alt=""> <!-- Imagem do produto -->
+                    <h3 class="dish-title">MODELO 3</h3> <!-- Título do produto -->
+                    <span class="dish-description">DESCRIÇÃO DO PRODUTO</span> <!-- Descrição do produto -->
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i> <!-- Ícones de estrela para avaliação -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4></h4> <!-- Preço do produto -->
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i> <!-- Ícone de carrinho de compras -->
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i> <!-- Ícone de coração -->
+                    </div>
+                    <img src="4.jpeg" class="dish-image" alt=""> <!-- Imagem do produto -->
+                    <h3 class="dish-title">MODELO 4</h3> <!-- Título do produto```html
+                    <span class="dish-description">DESCRIÇÃO DO PRODUTO</span> <!-- Descrição do produto -->
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i> <!-- Ícones de estrela para avaliação -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="dish-price">
+                        <h4></h4> <!-- Preço do produto -->
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i> <!-- Ícone de carrinho de compras -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials"> <!-- Seção "Avaliações" -->
+            <img src="5.jpeg" id="testimonial_chef" alt=""> <!-- Imagem ilustrativa -->
+            <div id="testimonials_content">
+                <h2 class="section-title">Depoimentos</h2> <!-- Título da seção -->
+                <h3 class="section-subtitle">O QUE OS CLIENTES ACHAM DA NOSSA LINHA DE PRODUTOS</h3> <!-- Subtítulo da seção -->
+                <!-- Adicione o conteúdo dos depoimentos aqui -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
